@@ -19,9 +19,8 @@ public class ListarChamadosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listar_chamados);
         Intent origemIntent = getIntent();
         String chave = origemIntent.getStringExtra(MainActivity.NOME);
-        lista = buscaChamados(chave);
+        //lista = buscaChamados(chave);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lista);
-        ListView listView = (listView) findViewById(R.id.listView);
 
     }
 }
